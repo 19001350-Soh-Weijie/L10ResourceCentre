@@ -91,7 +91,7 @@ public class ResourceCentreTest {
 		
 	}
 	
-	@Test
+	@Test//
 	public void doLoanChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
