@@ -55,7 +55,7 @@ public class ResourceCentreTest {
 		//Error
 		cb2 = new Chromebook ("", "", "");
 		ResourceCentre.addChromebook(chromebookList, cb2);
-		assertEquals("Test if the program add the blank object", cb2, chromebookList.get(0));
+		assertSame("Test if the program add the blank object", cb2, chromebookList.get(0));
 		
 		//Normal
 		cb2 = new Chromebook("CB0012", "SAMSUNG chromebook 4+", "Win 10");
