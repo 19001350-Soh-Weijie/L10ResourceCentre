@@ -94,6 +94,10 @@ public class ResourceCentreTest {
 	public void retrieveAllChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		assertEquals("Test if that ChromeBook arraylist has not been implemented?", 2, chromebookList.size());
+		
+		//test if Item list is not null but empty, so that can add new item
+		assertNotNull("Test if there is a valid Chromebook arraylist to add to", chromebookList);
 	}
 
 	@Test
