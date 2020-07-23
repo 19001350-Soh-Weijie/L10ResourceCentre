@@ -97,11 +97,15 @@ public class ResourceCentreTest {
 		
 	}
 	
-	@Test
+	@Test//
 	public void doLoanChromebookTest() {
 		//fail("Not yet implemented");
 		// write your code here
-	}
+		ResourceCentre.addChromebook(chromebookList, cb2);
+		cb2.setIsAvailable(false);
+		boolean ok = ResourceCentre.doLoanChromebook(chromebookList,"CB0012","8-8-2020");
+		assertFalse("Test that unavailable item is NOT ok to loan?",ok);
+		}
 	
 	@Test
 	public void doReturnCamcorderTest() {
